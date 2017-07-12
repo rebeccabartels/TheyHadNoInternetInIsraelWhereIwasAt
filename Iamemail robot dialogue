@@ -1,0 +1,18 @@
+stage.set_background("game") 
+# sprite = codesters.Square(x, y, width, "color")
+face = codesters.Square(0, 0, 280, "silver")
+# sprite = codesters.Star(x, y, points, radius, "color")
+eye1 = codesters.Star(50, 50, 7, 30, "green")
+# sprite = codesters.Polygon(x, y, sides, radius, "color")
+eye2 = codesters.Polygon(-50, 50, 7, 30, "green")
+# sprite = codesters.Ellipse(x, y, width, height, "color")
+mouth = codesters.Ellipse(0, -50, 125, 20, "purple")
+# sprite = codesters.Rectangle(x, y, width, height, "color")
+antenna = codesters.Rectangle(-110, 145, 10, 100, "cyan")
+
+def click(sprite):
+    mouth.say("I am email")
+    
+     # add other actions...
+    
+mouth.event_click(click)
